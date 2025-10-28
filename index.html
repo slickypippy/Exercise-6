@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="EN-CA">
   <head>
     <title>Exercise 7: Banh Mi, menus, and layout</title>
     <!-- This is embed code for Google fonts, take a look at  https://fonts.google.com/ for more info, you can just pick fonts and get an embed code which you use here. See how I am controlling them from <style> most of the CSS is just pasted in from Google and I have made tweaks to the weights and added other bits. This is what we will learn next week.-->
@@ -16,18 +16,22 @@
         font-size: 16px;
         width: 960px;
       }
+
       ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         display: flex;
         justify-content: center;
-        
+        text-transform: uppercase;
+
       }
-      ul li a{
+
+      ul li a {
         display: block;
         padding: 10px 18px;
         text-decoration: none;
+        color: grey;
       }
 
       h1 {
@@ -35,25 +39,67 @@
         font-optical-sizing: auto;
         font-weight: 500;
         font-style: normal;
-        text-align:center;
+        text-align: center;
+        padding: 10px;
       }
 
       #site-title {
         text-align: center;
+        font-size: 60px
+        color: grey;
       }
+
+      .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+        padding: 20px;
+        background-color: grey;
+        margin: 0 auto;
+      }
+
+      .grid-item {
+        background-color: white;
+        text-align: center;
+        font-size: 14px;
+        padding-bottom: 10px;
+        align-content: center;
+        width: 95%;
+        margin-left: 5px;
+        margin-bottom: 15px;
+
+      }
+      .grid-item p {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      
+      .grid-item img {
+       width: 100%;
+      }
+     
 
       nav {
         font-family: "Raleway", sans-serif;
-        font-optical-sizing: auto;
+        font-opcal-sizing: auto;
         font-weight: 400;
         font-style: normal;
       }
 
-      footer {}
+
+      footer {
+        margin-top: 40px;
+        background-color: white;
+        padding: 30px;
+        text-align: center;
+        border-radius: 15px;
+        border: 2px solid black;
+        color: black;
+      }
     </style>
   </head>
   <body>
-    <h1 id="site-title">Greg’s Banh Mi</h1>
+    <h1 id="site-title">Gordon’s Banh Mi</h1>
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
@@ -63,14 +109,43 @@
       </ul>
     </nav>
     <h1>At Greg's Banh Mi, we're serving up the perfect marriage of French and Vietnamese culinary traditions—crispy-on-the-outside, pillowy-on-the-inside baguettes loaded with bold, fresh flavorus that'll make your taste buds sing.</h1>
-    <h2>Classic Pork Banh Mi</h2>
-    <p>Tender marinated pork topped with crisp pickled vegetables, fresh cilantro, and a smear of pâté on a perfectly crusty baguette. A traditional favorite that balances savory, sweet, and tangy flavors in every bite.</p>
-    <h2>Lemongrass Chicken Banh Mi</h2>
-    <p>Grilled chicken marinated in fragrant lemongrass and garlic, paired with cucumber, jalapeños, and our house mayo. Light yet satisfying, this sandwich brings bright, aromatic flavors that'll transport you straight to Saigon.</p>
-    <h2>Tofu Banh Mi</h2>
-    <p>Crispy pan-fried tofu glazed in sweet soy sauce, layered with daikon, carrots, and fresh herbs for a vegetarian delight. Proof that plant-based can be just as bold and craveable as any meat-filled sandwich.</p>
-    <h2>Five-Spice Beef Banh Mi</h2>
-    <p>Thinly sliced beef seared with aromatic five-spice blend and served with pickled vegetables and spicy Sriracha mayo. Rich, warming spices meet cool, crunchy toppings for an unforgettable flavor experience.</p>
-    <footer>Because life's too short for boring sandwiches. Greg's got you covered—one crispy baguette at a time.</footer>
+
+
+
+
+
+    <div class="container">
+      <div class="grid-item">
+        <img id="banh-mi" src="banh-mi.jpg" alt="Classic Pork Banh Mi">
+        <h2>Classic Pork Banh Mi</h2>
+        <p>Tender marinated pork topped with crisp pickled vegetables, fresh cilantro, and a smear of pâté on a perfectly crusty baguette. A traditional favorite that balances savory, sweet, and tangy flavors in every bite.</p>
+      </div>
+      <div class="grid-item">
+        <img id="banh-mi" src="banh-mi.jpg" alt="Lemongrass Chicken Banh Mi">
+        <h2>Lemongrass Chicken Banh Mi</h2>
+        <p>Grilled chicken marinated in fragrant lemongrass and garlic, paired with cucumber, jalapeños, and our house mayo. Light yet satisfying, this sandwich brings bright, aromatic flavors that'll transport you straight to Saigon.</p>
+      </div>
+      <div class="grid-item">
+        <img id="banh-mi" src="banh-mi.jpg" alt="Tofu Banh Mi">
+        <h2>Tofu Banh Mi</h2>
+        <p>Crispy pan-fried tofu glazed in sweet soy sauce, layered with daikon, carrots, and fresh herbs for a vegetarian delight. Proof that plant-based can be just as bold and craveable as any meat-filled sandwich.</p>
+      </div>
+      <div class="grid-item">
+        <img id="banh-mi" src="banh-mi.jpg" alt="Five-Spice Beef Banh Mi">
+        <h2>Five-Spice Beef Banh Mi</h2>
+        <p>Thinly sliced beef seared with aromatic five-spice blend and served with pickled vegetables and spicy Sriracha mayo. Rich, warming spices meet cool, crunchy toppings for an unforgettable flavor experience.</p>
+      </div>
+      
+      
+      
+    </div>
+    
+<footer>Because life's too short for boring sandwiches. Gordon's got you covered—one crispy baguette at a time.</footer>
+
+   
+      
+  
+
+    
   </body>
 </html>
